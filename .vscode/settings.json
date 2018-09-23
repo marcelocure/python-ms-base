@@ -1,4 +1,0 @@
-{
-    "python.pythonPath": "${workspaceFolder}/pms/bin/python",
-    "python.jediEnabled": false
-}
