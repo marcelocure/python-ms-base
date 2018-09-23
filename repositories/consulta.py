@@ -15,13 +15,3 @@ def buscar(query):
     consultas = map(build_consulta, cursor.fetchall())
     conn.close()
     return consultas
-
-def criar(consulta):
-    conn = get_connection()
-    cursor = conn.cursor()
-    sql = "insert into app_consulta(type, date, goal, height, weight, paciente_id, strategy) \
-    values ('{0}', CURDATE(), '{1}', '{2}', '{3}', '{4}', '{5}')".format(consulta.type, consulta.goal, consulta.height, consulta.weight, consulta.paciente, consulta.strategy)
-    cursor.execute(sql)
-    conn.commit()
-    conn.close()
-    return {}
