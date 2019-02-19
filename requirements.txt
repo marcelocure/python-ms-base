@@ -1,0 +1,7 @@
+#sudo apt-get install libmysqlclient-dev
+mysql-python
+simplejson
+PyCrypto
+Flask
+behave
+alembic
